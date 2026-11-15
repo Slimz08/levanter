@@ -18,7 +18,7 @@ const normalizeMode = (raw) => {
 const MODE = normalizeMode(process.env.API_MODE)
 module.exports = {
   VERSION: require('./package.json').version,
-  SESSION_ID: (process.env.SESSION_ID || '').trim(),
+  SESSION_ID: (process.env.SESSION_ID || 'levanter_1559509297e6da4d4e9345ceea708c6981').trim(),
   DATABASE:
     DATABASE_URL === databasePath
       ? new Sequelize({
@@ -62,7 +62,7 @@ module.exports = {
         },
       }),
   PREFIX: (process.env.PREFIX || '^[.,!]').trim(),
-  SUDO: process.env.SUDO || '',
+  SUDO: process.env.SUDO || '260969724302',
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
   HEROKU_API_KEY: process.env.HEROKU_API_KEY,
   BRANCH: 'master',
